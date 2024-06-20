@@ -1,0 +1,124 @@
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #9e0000 #5c5958;
+}
+body .inner-body {
+    display: block;
+    width: 100vw;
+    background-color: #f0f0f0;
+    z-index: 1;
+    position: relative;
+}
+.top-header {
+    background: #d91015;
+    color: #fff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+}
+.top-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-header ul li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.top-header a, .top-header span {
+    color: #fff;
+}
+.fa-map-marker:before {
+    content: "\f3c5";
+}
+.fa-phone:before {
+    content: "\f095";
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+body {
+    font-family: TT Commons, sans-serif;
+    line-height: 23px;
+    color: #221e1c;
+    overflow-x: hidden !important;
+    transition: opacity .4s linear;
+    background: #f0f0f0;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+/* header div */
+
+header {
+    position: fixed;
+    top: 39px;
+    left: 0;
+    right: 0;
+    z-index: 105;
+    background-color: #fff;
+}
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+header .navbar ul.navbar-nav>li {
+    position: relative;
+}
+header .navbar ul.navbar-nav>li>a.nav-link {
+    margin: 0 1.2rem;
+    font-size: 1.1rem;
+    padding: 0 0 .25rem;
+}
+header .navbar ul.navbar-nav>li>.dropdown-container {
+    position: absolute;
+    top: 260%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 44;
+    width: 190px;
+    border-left: 1px solid #d91015;
+    left: 1.2rem;
+    background: #f9f9f9;
+    transition: all .2s linear;
+}
+header .navbar ul.navbar-nav>li>.dropdown-container>ul {
+    padding: .5rem;
+}
+header #navbar-s {
+    padding-right: .75rem;
+}
+.btn-cflex, .wpcf7-form .send {
+    display: inline-block;
+    background: #d91015;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: 2px solid #d91015;
+    padding: .5rem 2rem;
+    transition: all .1s ease-in;
+}
+.fa-search:before {
+    content: "\f002";
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, .1);
+}
+header .navbar {
+    padding: 0;
+}
+.navbar-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
