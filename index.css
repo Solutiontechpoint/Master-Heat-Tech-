@@ -672,6 +672,72 @@ img, svg {
 img {
     border-style: none;
 }
-
+section.icons span {
+    font-size: 1rem;
+    line-height: normal;
+    display: inline-block;
+    max-width: 175px;
+}
+section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.slick-track:after {
+    clear: both;
+}
+/* slider */
+section.slider {
+    height: calc(100vh - 200px);
+}
+section.slider .inner {
+    background-color: #d91015;
+    position: relative;
+    height: 100%;
+}
+section.slider .inner>div {
+    margin-bottom: 0;
+}
+.slick-list, .slick-slider {
+    position: relative;
+    display: block;
+}
+section.slider .inner {
+    background-color: #d91015;
+    position: relative;
+    height: 100%;
+}
+section.slider .inner .slick-list, section.slider .inner .slick-slide, section.slider .inner .slick-slide>div, section.slider .inner .slick-track {
+    height: 100%;
+}
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:after, .slick-track:before {
+    content: "";
+    display: table;
+}
+section.slider .inner .slick-list .single, section.slider .inner .slick-slide .single, section.slider .inner .slick-slide>div .single, section.slider .inner .slick-track .single {
+    position: relative;
+    height: 100%;
+}
+.section.slider .inner .slick-list .single>img, section.slider .inner .slick-slide .single>img, section.slider .inner .slick-slide>div .single>img, section.slider .inner .slick-track .single>img {
+    width: 100%;
+    height: 100%;
+    /* -o-object-fit: cover; */
+    object-fit: cover;
+    /* -o-object-position: center; */
+    object-position: center;
+}
 
 
