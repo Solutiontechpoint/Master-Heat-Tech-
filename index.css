@@ -896,5 +896,104 @@ section {
     text-rendering: auto;
     line-height: 1;
 }
+.progress, .progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+.carousel-wrapper .progress {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 3rem 0;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(#d91015), to(#d91015));
+    background-image: linear-gradient(90deg, #d91015, #d91015);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .4s ease-in-out;
+    transition: background-size .4s ease-in-out;
+    z-index: 0;
+}
+.carousel-wrapper .progress:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #d91015;
+    opacity: .5;
+    left: 0;
+    top: 2px;
+    z-index: 2;
+}
+.carousel-wrapper>div {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.carousel {
+    position: relative;
+    box-sizing: border-box;
+}
+/* intro text */
+section.intro-content.logos {
+    padding: 6rem 0 2rem;
+    background-color: #221e1c;
+}
+section.intro-content {
+    position: relative;
+}
+section.intro-content.logos .subtitle, section.intro-content.logos .title, section.intro-content.logos p {
+    color: #fff;
+}
+section.intro-content .subtitle {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    color: #221e1c;
+}
+section.intro-content.logos .intro {
+    color: #fff;
+}
+
+section.intro-content .outer .intro {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: .25rem;
+}
+section.intro-content.logos .intro {
+    color: #fff;
+}
+
+section.intro-content .outer .intro {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: .25rem;
+}
+section.intro-content .outer .intro i {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #d91015;
+    margin-right: .25rem;
+}
+section.intro-content .outer a.logo {
+    margin-right: 1rem;
+}
+
+section.intro-content.logos .logo {
+    position: relative;
+    display: inline-block;
+}
+section.intro-content.logos .logo img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    height: 40px;
+    opacity: 1;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
 
 
